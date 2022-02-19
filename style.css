@@ -1,0 +1,15 @@
+body{
+    font-family: 'Source Serif 4', sans-serif;
+}
+.bg-red{
+    background-color: #ff5350;
+}
+.color-red{
+    color:#ff5350;
+}
+.w-75px{
+    width:75px;
+}
+.bg-semi-dark{
+    background-color: #434445;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Treasure-Book</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600&display=swap" rel="stylesheet">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- vanila-css-link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section  -->
+    <header class="text-center mt-5 mb-5">
+        <h1>My <span class="text-danger">Treasure</span> Book <img src="treasure-icon.png" alt="">
+        </h1>
+    </header>
+
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col">
+                <!-- web image  -->
+                <div class="p-3 border rounded bg-light text-center">
+                    <img class="rounded-3 w-75" src="money-count.jpeg" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3  bg-light">
+                    <!-- claculate input amount section  -->
+
+                    <h5 class="text-center p-2">Income</h5>
+                    <div class="text-center">
+
+                        <p> income:<input id="income-amount" class="mx-4 border-1 rounded w" type="text"
+                                placeholder="Salary Amount"></p>
+                        <br>
+                        <h5 class="p-2 mt-4">Expence</h5>
+                        <label>Food :</label><input id="food-cost" class="mx-4 px-2 border-1 rounded mb-2" type="text"
+                            placeholder="Food Cost"><br>
+                        <p class="d-none">have to put a right number</p>
+                        <label>Rent :</label><input id="rent-cost" class="mx-4 px-2  border-1 rounded mb-2 " type="text"
+                            placeholder="Rent Amount"><br>
+                        <p class="d-none">have to put a right number</p>
+                        <label>Cost :</label><input id="pocket-cost" class=" mx-4 px-2 border-1 rounded mb-2 "
+                            type="text" placeholder="Pocket Money"><br>
+                        <p id="income" class="text-danger d-none">sorry!! Inputed cost amount is more then Income
+                            amount</p>
+                        <!-- calculate button  -->
+                        <button type="submit" id="calculate-button"
+                            class="mt-3 mb-3 bg-red text-light border-1 py-1 px-3 rounded">Calculate</button>
+                        <!-- calculated area  -->
+                        <h5>Total expence : <span id="total-expence">00</span> Taka</h5>
+                        <h5>Balance : <span id="balance-amount">00</span> Taka</h5>
+                        <div class="mt-4">
+                            <label>Save : </label> <input id="save-input" type="text"
+                                class="w-75px mx-3 bg-semi-dark text-light text-center "><span>%</span><button
+                                type="submit" id="save-button"
+                                class="bg-red text-light px-3 py-1 rounded-3 mx-3 ">Save</button>
+                        </div>
+                        <div class="mt-4">
+                            <h5>Saving Amount : <span id="saving-amount">00</span> Taka </h5>
+                            <h5 class="text-success">Remaining Balance : <span id="remaining-balance">00</span> Taka
+                            </h5>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
